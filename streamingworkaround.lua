@@ -13,7 +13,7 @@ if not character.PrimaryPart then character:WaitForChild("HumanoidRootPart") end
 local synsaveinstance
 do
     local ok, result = pcall(function()
-        local base = "" -- use your own version or use https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/refs/heads/main/
+        local base = "" -- Use your own version or use https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/refs/heads/main/
         return loadstring(game:HttpGet(base .. "saveinstance.luau", true), "saveinstance")()
     end)
     if not ok then
@@ -818,7 +818,7 @@ local function createMainUI()
     toggles.UI               = createToggle(scroll, "🖥", "Save UI (PlayerGui / CoreGui)",         true,  2)
     toggles.SafeMode         = createToggle(scroll, "🛡", "SafeMode — Anti-Detection",             true,  3)
     toggles.AntiIdle         = createToggle(scroll, "⏳", "Anti-Idle — Prevent AFK Kick",          true,  4)
-    toggles.Anon             = createToggle(scroll, "🕵", "Anonymous — Strip User Info",           false, 5)
+    toggles.Anon             = createToggle(scroll, "🕵", "Anonymous — Strip User Info",           true, 5)
     toggles.Bytecode         = createToggle(scroll, "⚙", "Save Bytecode",                         false, 6)
     toggles.Experimental     = createToggle(scroll, "🧪", "Experimental — Char-Position Sweep",   true, 7, T.expAccent)
 
