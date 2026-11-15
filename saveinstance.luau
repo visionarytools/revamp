@@ -2126,8 +2126,7 @@ local function cachedDecompiler(cache, key, source)
 end
 
 local function savedSourceHeader(source, backend)
-    return "-- Saved by USSI modded by Robloxscripts.com (Join the Discord) discord.robloxscripts.com\n"
-        .. "-- Decompiler used: " .. (cleanDecompilerName(backend) or "Unknown") .. "\n\n" .. source
+    return "Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :) \n\n"
 end
 -- END DECOMPILER PROVENANCE
 
