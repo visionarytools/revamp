@@ -877,7 +877,7 @@ local function buildOptions(toggles)
         Anonymous     = toggles.Anon.IsOn(),
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
-		noscripts	  = true,
+		noscripts	  = false,
         KillAllScripts= toggles.SafeMode.IsOn(),
         IgnoreList    = {},
         ExtraInstances= {},
