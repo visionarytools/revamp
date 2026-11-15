@@ -879,8 +879,7 @@ local function buildOptions(toggles)
         ShowStatus    = true,
 		noscripts	  = false,
         KillAllScripts= toggles.SafeMode.IsOn(),
-        IgnoreList    = {},
-        ExtraInstances= {},
+        ExtraInstances= {}
     }
     if not toggles.Map.IsOn() then
         table.insert(opts.IgnoreList, workspace)
