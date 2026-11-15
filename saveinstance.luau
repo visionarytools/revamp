@@ -2695,7 +2695,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	local currentparts, currentsize, totalsize, chunks = {}, 0, 0, table.create(1) -- ! currentparts holds string pieces that get concatenated once per chunk (avoids the O(n^2) growth of `..=` that caused "not enough memory")
 	local savebuffer, savebuffer_size = {}, 1
 	local header =
-		'<!-- Saved by USSI modded by Robloxscripts.com (Join the Discord) discord.robloxscripts.com --><roblox version="4">'
+		'<!-- Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :) --><roblox version="4">'
 
 	local StatusText
 	local StopElapsedClock
@@ -4253,7 +4253,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		end
 
 		savebuffer[savebuffer_size] =
-			"</roblox><!-- Saved by USSI modded by Robloxscripts.com (Join the Discord) discord.robloxscripts.com -->"
+			"</roblox><!-- Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :) -->"
 		savebuffer_size += 1
 		save_cache(true)
 		do
