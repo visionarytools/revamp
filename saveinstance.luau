@@ -2126,7 +2126,7 @@ local function cachedDecompiler(cache, key, source)
 end
 
 local function savedSourceHeader(source, backend)
-    return "Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :) \n\n"
+    return "Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :) \n\n" .. source
 end
 -- END DECOMPILER PROVENANCE
 
