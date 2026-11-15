@@ -1,12 +1,3 @@
--- archived
-
---!native
---!optimize 2
---!divine-intellect
--- discord.robloxscripts.com
--- SaveInstance 420 Edition | https://sirmemegithub.com/RealSlimShady2000/SaveInstance420Edition
--- Docs: https://pages.sirmemegithub.com/SaveInstance420Edition/
-
 -- BEGIN STREAMING PLAN
 local function streamNumber(value, fallback, low, high)
     local n = tonumber(value)
