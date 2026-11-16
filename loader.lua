@@ -875,7 +875,7 @@ end
 
 --  SAVE LOGIC
 local function generateFileName()
-    return game.MarketplaceService:GetProductInfoAsync(game.PlaceId).Name
+    return string.sub(string.gsub(string.gsub(string.gsub(string.format(game.MarketplaceService:GetProductInfo(game.PlaceId).Name), "[^%w _]", ""), " +", " "), " +$", ""), 1, 240)
 end
 
 local function buildOptions(toggles)
