@@ -4190,49 +4190,34 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 						RecoveredScripts
 						) .. "\n" or "")
 					.. [[
-		Thank you for using USSI modded by Robloxscripts.com (Join the Discord) discord.robloxscripts.com.
+		Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :)
 
-		ServerStorage, ServerScriptService and Server Scripts are IMPOSSIBLE to save because of FilteringEnabled.
+		Please keep in mind of the following:
 
-		If your player cannot spawn into the game, please move the scripts in StarterPlayer somewhere else. Then run `game:GetService("Players").CharacterAutoLoads = true`.
-		And use "Play Here" to start game instead of "Play" to spawn your Character where your Camera currently is.
+		1) Server Scripts, ServerScriptService, and ServerStorage are impossible to save due to FilteringEnabled.
 
-		If the chat system does not work, please use the explorer and delete everything inside the TextChatService/Chat service(s). 
-		Or run `game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()`
-				
-		If Union and MeshPart collisions don't work, run the script below in the Studio Command Bar:
-				
-				
-		local C = game:GetService("CoreGui")
-		local D = Enum.CollisionFidelity.Default
-				
-		for _, v in game:GetDescendants() do
-			if v:IsA("TriangleMeshPart") and not v:IsDescendantOf(C) then
-				v.CollisionFidelity = D
+		2) If your player cannot spawn into the game, please move the scripts in StarterPlayerScripts somewhere else. Then run "game:GetService("Players").CharacterAutoLoads = true" in the Command Bar.
+
+		3) If the chat system does not work, please use the Explorer to delete everything inside of the TextChatService/Chat service(s).
+		OR you can run "game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()" in the Command Bar.
+
+		4) If Union and MeshPart collisions do not work, please run the script below in the Command Bar:
+
+		local CoreGui = game:GetService("CoreGui")
+		local Default = Enum.CollisionFidelity.Default
+
+		for i, v in game:GetDescendants() do
+			if v:IsA("TriangleMeshPart") and not v:IsDescendantOf(CoreGui) then
+				v.CollisionFidelity = Default
 			end
 		end
-		print("Done")
-				
-		If you can't move the Camera, run this script in the Studio Command Bar:
-			
-		workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed
-		
-		Or Destroy the Camera.
 
-		This file was generated with the following settings:
-		]]
-					.. service.HttpService:JSONEncode(OPTIONS)
-					.. "\n\n\t\tElapsed time: "
-					.. os.clock() - elapse_t
-					.. " PlaceId: "
-					.. game.PlaceId
-					.. " PlaceVersion: "
-					.. game.PlaceVersion
-					.. " Client Version: "
-					.. version()
-					.. " Executor: "
-					.. (identify_executor and table.concat({ identify_executor() }, " ") or "Unknown")
-					.. "\n]]"
+		print("Done!")
+
+		5) If you cannot move your camera, please run this script "game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed" in the Command Bar.
+		OR use the Explorer to delete the Camera object.
+]]
+					.. "]]"
 			)
 		end
 		do
