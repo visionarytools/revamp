@@ -2613,7 +2613,7 @@ local function export_map_obj(root, objName, report)
 			delfile(objName)
 		end
 	end)
-	writefile(objName, "# Roblox map export by USSI (Robloxscripts.com) -- world-space geometry + per-part vertex colors\n")
+	writefile(objName, "# Thank you for choosing Austin Parks to Save Instance the Roblox game of your choosing! You can submit another Save Instance request by creating a Support Ticket within the [VS] Visionary Studios Discord Server (https://discord.gg/D3GusB9qWK) :)\n")
 	local buf, vOff, written, skipped, processed = {}, 0, 0, 0, 0
 	local function flush()
 		if #buf == 0 then
