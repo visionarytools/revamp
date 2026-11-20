@@ -121,7 +121,7 @@ do
 
 	local finder
 	finder, global_container = loadstring(
-		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+		game:HttpGet("https://raw.githubusercontent.com/rbxlx/SomeHub/refs/heads/main/" .. filename .. ".luau", true),
 		filename
 	)()
 
