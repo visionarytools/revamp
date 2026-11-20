@@ -24,7 +24,7 @@ local synsaveinstance
 do
     local ok, result = pcall(function()
         local base = "https://raw.githubusercontent.com/visionarytools/revamp/refs/heads/main/" -- Use your own version or use https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/refs/heads/main/
-        return loadstring(game:HttpGet(base .. "saveinstance.luau", true), "saveinstance")()
+        return loadstring(game:HttpGet(base .. "saveinstance.luau" .. "?token=GHSAT0AAAAAAEQLBBBGAYDYUX4BON5Z7SJE2YAJ2TQ", true), "saveinstance")()
     end)
     if not ok then
         error("UniversalSynSaveInstance failed to load: " .. tostring(result))
