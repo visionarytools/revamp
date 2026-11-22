@@ -1,4 +1,5 @@
 -- UPDATED SOMEHUB
+-- SETSTREAMING TRE
 -- BEGIN STREAMING PLAN
 local function streamNumber(value, fallback, low, high)
     local n = tonumber(value)
@@ -2789,7 +2790,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		Debug = false,
 
 		-- * Request a configured area before saving; see debug log for completion/retention observations.
-		SetStreaming = false,
+		SetStreaming = true,
 		StreamingAreaSize = 10000, -- studs (square) swept around your start position
 		StreamingRadius = 512, -- grid spacing, not a radius passed to the engine
 		StreamingCenter = false, -- Vector3; false uses the character position
