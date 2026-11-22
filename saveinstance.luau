@@ -1,5 +1,4 @@
 -- UPDATED SOMEHUB
--- SETSTREAMING TRE
 -- BEGIN STREAMING PLAN
 local function streamNumber(value, fallback, low, high)
     local n = tonumber(value)
