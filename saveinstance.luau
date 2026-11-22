@@ -2704,7 +2704,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	local saved_count, total_count = 0, 0 -- * Instances serialized vs. estimated total, for the progress bar
 
 	local OPTIONS = {
-		mode = "optimized",
+		mode = "full",
 		noscripts = false,
 		scriptcache = true,
 		-- decomptype = "",
