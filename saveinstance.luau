@@ -1,3 +1,4 @@
+-- UPDATED SOMEHUB
 -- BEGIN STREAMING PLAN
 local function streamNumber(value, fallback, low, high)
     local n = tonumber(value)
@@ -121,7 +122,7 @@ do
 
 	local finder
 	finder, global_container = loadstring(
-		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+		game:HttpGet("https://raw.githubusercontent.com/rbxlx/SomeHub/refs/heads/main/" .. filename .. ".luau", true),
 		filename
 	)()
 
@@ -306,7 +307,7 @@ do -- * Load Region of Déjà Vu
 			-- Credits @boatbomber
 			pcall(function()
 				local candidate = loadstring(
-					game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+					game:HttpGet("https://raw.githubusercontent.com/rbxlx/SomeHub/refs/heads/main/" .. filename .. ".luau", true),
 					filename
 				)()(4544052033).sha384
 				if type(candidate) == "function" and valid_sha384(candidate) then
